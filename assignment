@@ -1,0 +1,174 @@
+print("hello world")
+print("this is python programming")
+print("python is easy")
+
+
+a=20 #assigning values to the variables
+b=30
+print(a+b) #printing the result
+
+i="pawan" #assigning the string value to a variable
+j="kumar"
+print(type(i)) #printing the type of data
+print(i+j) #printing the concatination
+
+x=int(input("enter a number"))#assigning input dynamically through user
+y=int(input("enter another number"))
+add=(x+y)
+mul=(x*y)
+div=(x/y)
+sub=(x-y)
+mod=(x%y)
+print(add,mul,sub,div,mod)#printing all the basic functions in a simple calculator
+print(x//y)
+print(x**y)
+
+num1=20
+num2=20.98
+num3=2+7j
+n="pawan"
+print(type(num1))#printing the type of data
+print(type(num2))#printing the type of data
+print(type(num3))#printing the type of data
+print(type(n))#printing the type of data
+
+a=2
+print(a<<1)
+print(a>>1)
+
+
+a=10
+a=20
+a=30
+print(a)
+
+q=int(input("enter a number"))
+if(q%2==0):
+    print(q, "is a even number")
+else:
+    print(q, "is a odd number")
+
+
+a='pawan'
+for i in a:
+    print("hii guys")
+    print(a[1],a[2],a[3])
+
+check=['apple','banana','orange']
+print(type(check))
+for x in check:
+    print(check)
+
+    if(x=='banana'):
+        print(x)
+
+for y in range(0,10):
+    print(y, end=' ')
+
+for u in range(0,10,3):
+    print(u)
+
+i=1
+while (i<6):
+    print(i, end=' ')
+    i=i+1
+
+a="pawan"
+while (len(a)<=5):
+    print(a)
+
+
+
+#functions in python programming
+
+def pawan():
+    print("python programming")
+    print("this is program")
+    print("this is pawan")
+pawan()
+
+def chintu(u,y,p,r):
+    print(u+y)
+    print(p + r)
+chintu('pawan','kumar',10,200)
+
+
+def my_func(*parameter):
+    print("python is easy." + parameter[0] + parameter[1] + parameter[2])
+
+
+print(my_func("is it?", "to-learn","as it is"))
+
+def cicket(name3,name2,name1):
+    print("who is the best crickter in the world?" + name1 + name2  + name3)
+    select=int(input("1.sachin \n 2.lara \n 3.kohli \n enter your choice"))
+    if(select==1):
+        print("the best cricketer in the world is" +name1)
+    elif(select==2):
+        print("the best cricketer in the world is" +name2)
+    elif(select==3):
+        print("the best cricketer in the world is" +name3)
+print(cicket("1.sachin", "2.lara", "3.kohli"))
+
+
+
+def white(**pawan):
+    print("india is a cultured nation" + pawan["name1"] + pawan["name2"])
+white(name1="and colourful", name2="with its spiritual nature")
+
+def green(fav_place="andhra"):
+    print("i love the place of" + fav_place)
+green("new-jersey")
+green("tanuku")
+green("chennai")
+
+st=[]
+print(type(st))
+st=["sourav","ganguly","rahul","dravid"]
+print(st[0])
+print(st[1])
+print(st[2])
+print(st[3])
+print(st[-1], st[-2], st[-3], st[-4])
+print(st[0:4])
+print(st[1:3],st[1:2])
+print(st[0:3])
+print(st.append("virat"))
+print(st.append("kohli"))
+print(st.append("cricket"))
+print(st)
+(st.insert(3,"mobile"))
+(st.insert(7,"device"))
+print(st)
+
+s=lambda a: a+100
+print(s(200))
+
+d=lambda a,b: a**b
+print(d(2,3))
+
+def pawan(n):
+    return lambda a: a*n
+number=pawan(100)
+another_num=pawan(100)
+
+print(number(2))
+print(another_num(3))
+
+
+import random
+print(dir(random))
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+c=datetime.datetime.now()
+print(c.strftime("%A"))
+print(c.year)
+
+v=datetime.datetime(2020,7,27)
+print(v)
+
+g=datetime.datetime(1947,8,15)
+print(g.strftime("%C"))
+
